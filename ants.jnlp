@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp codebase="https://github.com/juliangamble/clojure-black-scholes" 
+      href="https://sites.google.com/site/juliangamble/Home/ants.jnlp">
+        <information>
+    <title>Clojure Ants Simulation</title>
+    <vendor>Machiavellian</vendor>
+  </information>
+  <resources>
+    <j2se version="1.4+" />
+    <jar href="https://sites.google.com/site/juliangamble/Home/ants.jar"/>
+  </resources>
+  <application-desc main-class="demo.AntsAppletRunner"/>
+  <offline-allowed/>
+  <security>
+    <all-permissions/>
+  </security>
+</jnlp>

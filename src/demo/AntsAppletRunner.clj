@@ -1,13 +1,16 @@
 (ns demo.AntsAppletRunner
   (:import
-        (javax.swing JApplet JPanel JLabel JFrame)))
+        (javax.swing JApplet JPanel JLabel JFrame))
+  (:gen-class
+    :post-init post-init
+    :main -main))
 
 ;------
 (compile 'demo.AntsApplet2)
 
-(defn -main [s]
+(defn -main []
   (let [applet (new demo.AntsApplet2)]
-    (doto (JFrame. "Ants Applet")
+    (doto (JFrame. "Ants")
       (.add (.getContentPane applet))
       (.pack)
       (.setLocationByPlatform true)
@@ -15,4 +18,4 @@
       (.setVisible true))     
     ))
 
-(-main "s")
+;(-main "s")
