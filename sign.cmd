@@ -1,1 +1,0 @@
-jarsigner -keystore compstore -storepass sunshine -keypass sunshine -signedjar ants.jar ants-0.1-standalone.jar signFiles
