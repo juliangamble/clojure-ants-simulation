@@ -1,1 +1,0 @@
-keytool -genkey -alias signFiles -keystore compstore -keypass sunshine -dname "cn=machiavellian" -storepass sunshine -validity 3650
